@@ -12,7 +12,7 @@ Además, la aplicación contará con diferentes niveles de dificultad, desde pre
 
 Paso a paso que usaremos en el proyecto.
 
-![Android Studio](imgs/android.webp)
+![Android Studio](docs/android.webp)
 
 *<b>Figura 1:</b> Instalación de Android Studio*
 

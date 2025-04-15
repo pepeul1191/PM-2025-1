@@ -21,19 +21,13 @@ class MyApp extends StatelessWidget {
     );
 
     final MaterialTheme materialTheme = MaterialTheme(textTheme);
-    print('1 +++++++++++++++++++++++');
-    print(
-        "El modo del sistema es: ${WidgetsBinding.instance.platformDispatcher.platformBrightness}");
-    final scheme = Theme.of(context).colorScheme;
-    print("Color primario activo: ${scheme.primary}");
-    print('2 +++++++++++++++++++++++');
 
     return MaterialApp(
       title: 'Flutter Demo',
       theme: materialTheme.light(),
       darkTheme: materialTheme.dark(),
       themeMode: ThemeMode.system,
-      home: const LoginPage(),
+      home: LoginPage(),
     );
   }
 }

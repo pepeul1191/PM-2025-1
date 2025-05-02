@@ -1,0 +1,19 @@
+@startuml
+node "Replit" {
+    artifact "Quiz API Ruby" as webApp
+    artifact "quiz.db Sqlite3" as db
+}
+
+node "Teléfono Android" {
+    artifact "ULima Quiz" as mobileApp
+}
+
+node "Open Street Server" {
+    artifact "Open Street API" as maps
+}
+
+webApp -down-> db : "Consulta y guarda datos"
+mobileApp -left-> webApp : "Consume servicios REST"
+mobileApp -left-> maps : "Consume servicios REST"
+@enduml
+

@@ -1,0 +1,23 @@
+@startuml
+actor "Usuario" as User
+actor "Administrador" as Admin
+
+rectangle "Sistema de Quizzes" {
+    usecase "Registrarse" as UC1
+    usecase "Iniciar sesión" as UC2
+    usecase "Crear Quiz" as UC3
+    usecase "Responder Quiz" as UC4
+    usecase "Ver historial de Quizzes" as UC5
+    usecase "Gestionar Preguntas" as UC6
+}
+
+User --> UC1
+User --> UC2
+User --> UC3
+User --> UC4
+User --> UC5
+
+Admin --> UC6
+Admin --> UC5
+
+@enduml
